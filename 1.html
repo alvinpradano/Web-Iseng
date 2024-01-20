@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website">
+    <meta name="keywords" content="Personal, Portofolio, Website">
+    <meta name="author" content="Alvin Pradano">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome!</title>
+</head>
+<body>
+    <nav id="main">
+        <a href="" class="tombol" id="logo" onclick="alert('Hello!')">&#9910;  &Vopf;&Eopf;&Sopf;&Topf;&Aopf;</a>
+        <a href="#Content1" class="tombol" id="tombol1" onclick="openContent1()">1</a>
+        <a href="#Content2" class="tombol" id="tombol2" onclick="openContent2()">2</a>
+        <a href="" class="tombol" id="tombol3">3</a>
+        <a href="" class="tombol" id="tombol4">4</a>
+        <a href="" class="tombol" id="tombol5">5</a>
+        <a href="" class="tombol" id="tombol6">6</a>
+        <a href="" class="tombol" id="tombol7">7</a>
+        <a href="" class="tombol" id="tombol8">8</a>
+        <a href="" class="tombol" id="tombol9">9</a>
+        <a href="" class="tombol" id="tombol10">10</a>
+        <a href="" class="tombol" id="tombol11">11</a>
+        <a href="" class="tombol" id="tombol12">12</a>
+        <a href="" class="tombol" id="tombol13">13</a>
+        <a href="" class="tombol" id="tombol14">14</a>
+        <a href="" class="tombol" id="tombol15">15</a>
+        <a href="" class="tombol" id="tombol16">16</a>
+        <a href="#Footer" class="tombol" id="tombol17" onclick="openFooter()">17</a>
+    </nav>
+    
+    <section id="Content1">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeContent1()">&times;</a>
+        <a href="content1.txt"></a>
+        <p>Content 1 </p>
+        <!-- <hr> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laboriosam qui ab dignissimos similique debitis deserunt iste? Harum, sequi obcaecati in, possimus deserunt, veritatis iusto expedita temporibus eos natus tempore!</p>
+    </section>
+
+    <section id="Content2">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeContent2()">&times;</a>
+        <p>Content 2 </p>
+        <!-- <hr> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veritatis totam mollitia explicabo esse exercitationem dolor sed in, fugit natus pariatur nostrum dolore aut unde non quos eos laboriosam doloremque.</p>
+    </section>
+    
+    <div id="vanta"></div>
+    
+    <footer id="Footer">
+        <a href="javascript:void(0)" class="closebtn" onclick="openFooter()">&times;</a>
+        <a href="mailto:alvin_pradano@ymail.com" title="Send Feedback to My E-mail">Send Feedback</a>
+        <p>&copy; Your Company 2022. All Rights Reserved.</p>
+        <p>Crafted by <span>Alvin Pradano</span></p>
+    </footer>
+
+
+<script>
+	function openContent1() { document.getElementById("Content1").style.height = "100%"; }
+	function closeContent1() { document.getElementById("Content1").style.height = "0%"; }
+    
+	function openContent2() { document.getElementById("Content2").style.height = "100%"; }
+	function closeContent2() { document.getElementById("Content2").style.height = "0%"; }
+    
+    function openFooter() {
+          var x = document.getElementById("Footer");
+          if (x.style.display === "block") {            
+            x.style.display = "none";
+            document.getElementById("main").style.marginBottom = "0%";
+          } else {
+            x.style.display = "block";
+            document.getElementById("main").style.marginBottom = "0.1%";
+          }
+    }    
+</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+    el: "#vanta",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0xffff,
+    backgroundColor: 0x0,
+    points: 7.00,
+    maxDistance: 25.00,
+    spacing: 20.00,
+    backgroundAlpha: 0.0
+})
+</script> -->
+
+</body>
+</html>

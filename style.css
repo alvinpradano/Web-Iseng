@@ -1,0 +1,146 @@
+body{
+    margin: 0%;
+    background-color: black;
+    background-image: url("circuitwallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    /* overflow: auto; */
+    
+}
+
+/* #vanta {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+nav {
+    /* margin: auto; */
+    /* border: 0.1em solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 1rem;
+    height: 90vh;
+    padding: 5vh;
+}
+
+.tombol {
+    /* margin: 0.5vw; */
+    padding: 3vw;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgb(0, 0, 0, 1));
+    border: 0.2vw solid cyan;
+    color: cyan;
+    border-radius: 2vw;
+    /* box-shadow: 0 0 0.5rem cyan, 0 0 1rem cyan, 0 0 2rem cyan ; */
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+nav :hover{
+    /* width: 10%; */
+    background-color: cyan;
+    background-image: none;
+    border: 0.2vw solid black;
+    color: black;
+    box-shadow: 0 0 0.5rem black, 0 0 1rem cyan, 0 0 2rem cyan ;
+    transition-timing-function: ease;
+    transition: 0.7s;
+}
+
+#logo {
+    background-image: none;
+    border: none;
+    text-shadow: 2px 2px 4px cyan;
+    cursor: help;
+}
+
+#tombol1{
+
+}
+
+section {
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.4s;
+    /* padding: 5%; */
+    color: white;
+    text-align: justify;
+}
+
+section p {
+    margin: 5vw;
+    font-size: 1.5rem;
+}
+
+section .closebtn {
+    /* text-align: right; */
+    position: absolute;
+    right: 30px;
+    color: red; 
+    font-size: 4rem; 
+    text-decoration: none;
+}
+
+footer {
+    bottom: 0%;
+    width: 100%;
+    background-color: cyan;
+    text-align: center;
+    padding: 1% 0;
+    position: relative;
+    display: none;
+    transition: 5s;
+}
+
+footer .closebtn {
+    position: absolute;
+    right: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: red;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+/* width */
+    ::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+    /* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+} */
+/* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: black; 
+        border: 2px solid cyan;
+}
+/* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: cyan; 
+        border: 2px solid black;
+}
+
+
+/* ///////////////////////// Mobile \\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media only screen and (max-width: 1000px) {
+    .tombol {
+        min-width: 15%;
+    }
+}
